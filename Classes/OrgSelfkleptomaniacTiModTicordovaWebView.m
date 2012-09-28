@@ -56,7 +56,7 @@
         if ([scheme isEqualToString:@"fireevent"])
         {
             NSString * eventName = [newUrl host];
-            NSArray * paths = [path componentsSeparatedByString:@"/"];
+            //NSArray * paths = [path componentsSeparatedByString:@"/"];
             if ([self.proxy _hasListeners:eventName]){
                 DebugLog(@"[DEBUG] fire: %@",eventName);
                 NSDictionary * event = [NSDictionary dictionaryWithObjectsAndKeys:path, @"path", eventName, @"event", nil];
