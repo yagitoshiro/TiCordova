@@ -37,7 +37,8 @@ if (Ti.Platform.name == "android") {
 	win.add(proxy);
 }
 
-var webview = ticordova.createWebView({url:'http://dev.voidoid.com/webview', top:0, height:Ti.UI.FILL, width:Ti.UI.FILL});
+var webview = ticordova.createWebView({userAgent:'dofjadojfosaidfjasd/1.0', url:'http://dev.voidoid.com/webview', top:0, height:Ti.UI.FILL, width:Ti.UI.FILL});
+//webview.setUserAgent('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh/1.0');
 
 webview.addEventListener('my_event', function(e){
   Ti.API.info(e);

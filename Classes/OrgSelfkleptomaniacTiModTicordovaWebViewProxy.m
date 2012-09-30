@@ -72,6 +72,13 @@
 	[super _initWithProperties:properties];
 }
 
+-(void)setUserAgent:(id)value
+{
+    NSDictionary *dictionnary = [[NSDictionary alloc] initWithObjectsAndKeys:value, @"UserAgent", nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dictionnary];
+    [dictionnary release];
+}
+
 #pragma mark View Load/Unload LifeCycle
 -(void)viewWillAttach
 {
