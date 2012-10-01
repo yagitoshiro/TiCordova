@@ -42,9 +42,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    BOOL * parentResult = [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
-    
-    if(!parentResult){
+    if(NO == [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType]){
         return NO;
     }else{
         NSURL * newUrl = [request URL];

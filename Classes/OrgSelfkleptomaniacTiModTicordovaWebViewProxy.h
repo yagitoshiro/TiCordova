@@ -5,8 +5,9 @@
  * Please see the LICENSE included with this distribution for details.
  */
 #import "TiViewProxy.h"
+#import "TiUIWebViewProxy.h"
 
-@interface OrgSelfkleptomaniacTiModTicordovaWebViewProxy : TiViewProxy {
+@interface OrgSelfkleptomaniacTiModTicordovaWebViewProxy : TiUIWebViewProxy {
 @private
 }
 
